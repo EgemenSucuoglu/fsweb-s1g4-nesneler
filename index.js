@@ -17,10 +17,10 @@ const serpmeKahvalti = {isim: "Serpme Kahvaltı", fiyat: 16, kategori:"Kahvaltı
 
 function MenuElemaniOlustur(){
 	const returningObject = {};
-	const bilgiler = ["isim", "fiyat", "kategori"];
-	for (let i=0, i<arguments.length, i++)
-	    returningObject[bilgiler[i]]=arguments[i];
-		return returningObject;
+	const keyCollection = ["isim","fiyat","kategori"];
+	for(let i=0; i<arguments.length; i++)
+		returningObject[keyCollection[i]] = arguments[i];
+	return returningObject;
 }
 
 
